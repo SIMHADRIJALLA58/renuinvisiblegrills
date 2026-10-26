@@ -8524,3 +8524,384 @@ body {
         scroll-behavior: auto !important;
     }
 }
+
+
+
+
+
+
+.renu-quote {
+    padding: 90px 20px;
+    background: #f7f8fa;
+    font-family: Arial, sans-serif;
+}
+
+.renu-quote *,
+.renu-quote *::before,
+.renu-quote *::after {
+    box-sizing: border-box;
+}
+
+.renu-quote__container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.renu-quote__layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid #e9e9e9;
+}
+
+.renu-quote__visual {
+    position: relative;
+    min-height: 650px;
+    background: #222;
+    overflow: hidden;
+}
+
+.renu-quote__visual > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+}
+
+.renu-quote__visual::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0,0,0,0.08) 0%,
+        rgba(0,0,0,0.45) 50%,
+        rgba(0,0,0,0.88) 100%
+    );
+    pointer-events: none;
+}
+
+.renu-quote__visual-content {
+    position: absolute;
+    z-index: 1;
+    left: 35px;
+    right: 35px;
+    bottom: 40px;
+    color: #ffffff;
+}
+
+.renu-quote__tag {
+    display: inline-block;
+    padding: 9px 17px;
+    border-radius: 50px;
+    background: #f26722;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 22px;
+}
+
+.renu-quote__visual-content h3 {
+    color: #ffffff;
+    font-size: clamp(30px, 3vw, 44px);
+    line-height: 1.2;
+    font-weight: 800;
+    margin: 0 0 18px;
+}
+
+.renu-quote__visual-content p {
+    color: #eeeeee;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.renu-quote__benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.renu-quote__benefits > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.renu-quote__benefit-icon {
+    width: 27px;
+    height: 27px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    background: #f26722;
+    color: #ffffff;
+    border-radius: 50%;
+    font-weight: 800;
+}
+
+.renu-quote__form-side {
+    padding: 48px 45px;
+    min-width: 0;
+}
+
+.renu-quote__eyebrow {
+    color: #f26722;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.renu-quote__form-side h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 3vw, 44px);
+    line-height: 1.2;
+    font-weight: 800;
+    color: #191919;
+    margin: 14px 0 18px;
+}
+
+.renu-quote__form-side h2 span {
+    color: #f26722;
+}
+
+.renu-quote__description {
+    color: #626975;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.renu-quote__description strong {
+    color: #282828;
+}
+
+.renu-quote__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.renu-quote__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.renu-quote__field {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-width: 0;
+}
+
+.renu-quote__field label {
+    color: #262626;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.renu-quote__field input,
+.renu-quote__field textarea {
+    width: 100%;
+    padding: 15px 17px;
+    background: #f8f9fb;
+    border: 1px solid #e0e3e8;
+    border-radius: 12px;
+    outline: none;
+    color: #222222;
+    font-family: inherit;
+    font-size: 14px;
+    box-shadow: none;
+    transition: border-color 0.15s ease;
+}
+
+.renu-quote__field input {
+    min-height: 51px;
+}
+
+.renu-quote__field textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.renu-quote__field input::placeholder,
+.renu-quote__field textarea::placeholder {
+    color: #8b93a0;
+}
+
+.renu-quote__field input:focus,
+.renu-quote__field textarea:focus {
+    border-color: #f26722;
+    background: #ffffff;
+}
+
+.renu-quote__services {
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+.renu-quote__services legend {
+    color: #262626;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.renu-quote__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.renu-quote__chip {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.renu-quote__chip input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.renu-quote__chip span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 43px;
+    padding: 11px 17px;
+    border: 1px solid #e0e3e8;
+    border-radius: 50px;
+    background: #ffffff;
+    color: #434b58;
+    font-size: 13px;
+    font-weight: 600;
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        color 0.15s ease;
+}
+
+.renu-quote__chip input:checked + span {
+    background: #f26722;
+    border-color: #f26722;
+    color: #ffffff;
+}
+
+.renu-quote__chip input:focus-visible + span {
+    outline: 2px solid #f26722;
+    outline-offset: 3px;
+}
+
+.renu-quote__chip:hover span {
+    border-color: #f26722;
+}
+
+.renu-quote__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 58px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    background: #f26722;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.renu-quote__submit:hover {
+    background: #d94f0e;
+}
+
+.renu-quote__submit svg {
+    width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+}
+
+.renu-quote__note {
+    margin: 0;
+    color: #777f89;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+@media (max-width: 991px) {
+    .renu-quote__layout {
+        grid-template-columns: 1fr;
+    }
+
+    .renu-quote__visual {
+        min-height: 400px;
+    }
+
+    .renu-quote__form-side {
+        padding: 35px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .renu-quote {
+        padding: 55px 15px;
+    }
+
+    .renu-quote__layout {
+        border-radius: 18px;
+    }
+
+    .renu-quote__visual {
+        min-height: 350px;
+    }
+
+    .renu-quote__visual-content {
+        left: 22px;
+        right: 22px;
+        bottom: 25px;
+    }
+
+    .renu-quote__visual-content h3 {
+        font-size: 28px;
+    }
+
+    .renu-quote__form-side {
+        padding: 30px 20px;
+    }
+
+    .renu-quote__row {
+        grid-template-columns: 1fr;
+    }
+
+    .renu-quote__field input,
+    .renu-quote__field textarea {
+        font-size: 16px;
+    }
+
+    .renu-quote__chip span {
+        padding: 10px 13px;
+        font-size: 12px;
+    }
+
+    .renu-quote__submit {
+        font-size: 13px;
+    }
+}
