@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "renuinvisiblegrills.vercel.app"
+        }
+      ],
+      "destination": "https://renuinvisiblegrills.in/$1",
+      "permanent": true
+    }
+  ]
+}
